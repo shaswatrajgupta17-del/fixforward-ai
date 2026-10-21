@@ -1,0 +1,7 @@
+name = "FixForward AI"
+
+[mcp]
+enabled = true
+
+[ai]
+required = true

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101b2d">
+<title>FixForward AI — From product problems to verified resolutions</title>
+<meta name="description" content="An evidence-first resolution agent that helps you troubleshoot product issues, compare options, and keep a complete case history.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <a class="brand" href="/" aria-label="FixForward home"><span class="brand-mark">F<span>+</span></span><span>fixforward<span class="brand-ai">AI</span><small>PROOF TO RESOLUTION</small></span></a>
+    <div class="workspace-label">WORKSPACE</div>
+    <nav class="nav">
+      <button class="nav-item active" data-view="overview"><span>▦</span> Overview</button>
+      <button class="nav-item" data-view="cases"><span>◷</span> Resolution cases <b id="nav-case-count">0</b></button>
+      <button class="nav-item" data-view="products"><span>▣</span> My products</button>
+      <button class="nav-item" data-view="evidence"><span>⌕</span> Evidence library</button>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="principle"><div class="principle-icon">✳</div><strong>Evidence first.</strong><p>Every recommendation needs a reason. Every resolution needs an outcome.</p></div>
+      <div class="sidebar-foot"><span class="status-dot"></span> Demo workspace <span class="version">MVP 0.1</span></div>
+    </div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><div><div class="eyebrow" id="top-eyebrow">YOUR PRODUCT CARE WORKSPACE</div><h1 id="page-title">Good afternoon. Let's solve something.</h1></div><div class="top-actions"><span class="privacy-pill"><span>●</span> Evidence-linked decisions</span><button class="avatar" title="Demo profile">FF</button></div></header>
+    <section id="app-content" aria-live="polite"><div class="loading"><span class="spinner"></span> Loading your workspace…</div></section>
+    <footer class="footer"><span>FIXFORWARD AI</span><span>Evidence-first product resolution · Demo data is fictional</span><button id="refresh-btn">Refresh data ↻</button></footer>
+  </main>
+</div>
+<div id="toast-region" class="toast-region" aria-live="polite"></div>
+<dialog id="modal" class="modal"><div id="modal-content"></div></dialog>
+<script src="/app.js" defer></script>
+</body>
+</html>
